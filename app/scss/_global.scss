@@ -1,3 +1,32 @@
-gidbody{
-  text-align: center;
+body{
+  min-height: 100vh;
+  @extend %montserrat-300;
+  font-size: 15px;
+  line-height: 20px;
+  font-style: normal;
+  color: $default;
+}
+.container{
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title{
+  font-size: 48px;
+  line-height: 50px;
+  @extend %montserrat-700;
+  letter-spacing: -1.65px;
+  color: #3A3838;
+  padding-bottom: 18px;
+  align-self:flex-start;
+  position: relative;
+}
+.title::after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #236FB5;
+  bottom: 0;
+  left: 0;
 }
