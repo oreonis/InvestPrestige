@@ -3,6 +3,13 @@
 @import 'reset';
 @import 'global';
 
+
+/* ---------
+
+header start 
+
+-------------*/
+
 .header{
   padding: 10px 0;
   &__wrapper{
@@ -21,7 +28,7 @@
   }
   &__list-link{
    color: $default;
-   @extend %montserrat-700;
+   @extend %montserrat-400;
    font-size: 16px;
    transition: all .3s;
    padding: 0 9px 9px;
@@ -35,8 +42,101 @@
    border-bottom: 2px solid $accent;
   }
 }
+/* ---------
+
+header and 
+
+-------------*/
+
+/* ---------
+
+footer start 
+
+-------------*/
+.footer{
+  background-image: url(../images/bg-footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 10px;
+  &__wrapper{
+   display: flex;
+   justify-content: space-between;
+  }
+  &__logo-img{
+   margin-bottom: 20px;
+  }
+  &__text{
+   max-width: 350px;
+   color: #ffff;
+   font-weight: 300;
+   font-size: 14px;
+  }
+  &__inner-contact{
+   width: 60%;
+   display: flex;
+   justify-content: space-between;
+  }
+  &__inner-item{
+   width: 33%;
+  }
+  &__inner-title{
+   font-size: 20px;
+   padding-bottom: 0px;
+   margin-bottom: 10px;
+   color: #ffff;
+   letter-spacing: 1px;
+  }
+  &__inner-title::after{
+   background-color: #fff;
+   width: 30px;
+   height: 2px;
+  }
+  &__phone{
+   display: block;
+   color: #ffff;
+   margin-bottom: 10px;
+  }
+  &__mail{
+   color: #ffff;
+   margin-bottom: 50px;
+   
+  }
+  &__inner-item__text{
+   color: #ffff;
+   margin-bottom: 20px;
+  }
+  &__inner-title__span{
+   display: block;
+   width: 200px;
+  }
+  &__inner__social-list{
+    max-width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  &__inner-btn{
+    border: none;
+    background-color: #fff;
+    color: $accent;
+    text-transform: uppercase;
+    padding: 12px 26px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+     cursor: pointer;
+  }
+  &__inner-btn:hover{
+    box-shadow: none;
+  }
+
+}
 
 
+/* ---------
+
+footer and 
+
+-------------*/
 
 
 @import 'media';
